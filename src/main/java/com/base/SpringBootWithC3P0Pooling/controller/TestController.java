@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class SmileCentiliController {
+public class TestController {
 
 	@GetMapping("/notification")
 	public ResponseEntity<String> requestController(@RequestParam Map<String, String> requestMap) {
