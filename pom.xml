@@ -4,10 +4,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.callback</groupId>
-	<artifactId>smilecentiliCallback</artifactId>
+	<groupId>com.springbootpooling</groupId>
+	<artifactId>springbootc3p0</artifactId>
 	<version>0.0.1</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>smilecentiliCallback</name>
 	<description>smilecentiliCallback</description>
@@ -129,7 +129,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>centiliCallback</finalName>
+		<finalName>springbootc3p0</finalName>
 	</build>
 
 
