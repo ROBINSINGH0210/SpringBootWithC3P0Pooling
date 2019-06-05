@@ -17,7 +17,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 @Configuration
 @EnableAutoConfiguration
 public class SpringBootWithC3P0PoolingConfiguration {
-	private static final Logger log = LoggerFactory.getLogger(SpringBootWithC3P0PoolingConfiguration.class);
+//	private static final Logger log = LoggerFactory.getLogger(SpringBootWithC3P0PoolingConfiguration.class);
 	@Autowired
 	private DataSource dataSource;
 
@@ -29,12 +29,12 @@ public class SpringBootWithC3P0PoolingConfiguration {
 		ComboPooledDataSource ds = (ComboPooledDataSource) dataSource;
 		ds.setDriverClass(env.getProperty("spring.datasource.driver-class-name"));
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(ds);
-		log.debug("Connection Polling datasource : " + dataSource); // check connection pooling
-		log.debug("Instace of data source: " + ds);
-		log.debug("Connection Pool size : " + ds.getMaxPoolSize());
-		log.debug("Min connection pool size: " + ds.getMinPoolSize());
-		log.debug("Max statements: " + ds.getMaxStatements());
-		log.debug("Url: " + ds.getJdbcUrl());
+		System.out.println("Connection Polling datasource : " + dataSource); // check connection pooling
+		System.out.println("Instace of data source: " + ds);
+		System.out.println("Connection Pool size : " + ds.getMaxPoolSize());
+		System.out.println("Min connection pool size: " + ds.getMinPoolSize());
+		System.out.println("Max statements: " + ds.getMaxStatements());
+		System.out.println("Url: " + ds.getJdbcUrl());
 		return jdbcTemplate;
 	}
 }

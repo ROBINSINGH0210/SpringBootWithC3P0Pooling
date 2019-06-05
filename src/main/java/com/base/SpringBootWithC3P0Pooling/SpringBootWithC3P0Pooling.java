@@ -7,11 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SpringBootWithC3P0Pooling {
-	private static final Logger log = LoggerFactory.getLogger(SpringBootWithC3P0Pooling.class);
+//	private static final Logger log = LoggerFactory.getLogger(SpringBootWithC3P0Pooling.class);
 	
 
 	public static void main(String[] args) {
-		log.info("Inside SpringBootWithC3P0Pooling ");
+		System.out.println("Inside SpringBootWithC3P0Pooling ");
 		SpringApplication.run(SpringBootWithC3P0Pooling.class, args);
 	}
 }
